@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+:root {
+    --grayColor: #bdbdbd;
+    --blackColor: #212121;
+    --grayBkgColor: #f5f5f5;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--blackColor);
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 29px;
+}
+
+.left-column {
+    padding: 21px 34px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.left-column .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.header__subtitles{
+    text-transform: uppercase;
+    font-size: 8px;
+    padding-top: 3px;
+
+    color: var(--grayColor);
+}
+
+.header__subtitles span:first-child {
+    margin-right: 13px;
+}
+
+
+.header__subtitles .black   {
+    color: var(--blackColor);
+    font-weight: 600;
+}
+
+.header__subtitles .pink {
+    font-weight: 600;
+    color: #e91e63;
+}
+
+.header__icons {
+    position: absolute;
+     top: 21px;
+     right: 34px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header__icons .header__heart {
+    width: 100%;
+    height: 100%;
+
+    padding-right: 47px;
+}
+
+.header__icons .header__hori-bars {
+    font-size: 14px;
+    font-weight: 600;
+    transform: rotate(90deg);
+}
+
+.music__info {
+    align-self: center;
+
+    font-size: 12px;
+    color: var(--grayColor);
+}
+
+.music__info .music__title {
+    font-size: 55px;
+    color: var(--blackColor);
+
+    line-height: 1.2;
+}
+
+.music__info .music__text {
+    /* font-size: 12px; */
+    margin-left: 3px;
+}
+
+.music__info .music__more-info{
+    padding-top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.info__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: var(--grayBkgColor);
+
+    margin-right: 8px;
+    margin-left: 3px;
+}
+
+.footer {
+    align-self: end;
+}
+
+.return__link {
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.return__link .return__icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--grayBkgColor);
+
+    margin-right: 8px;
+}
+
+.return__link .return__text {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--grayColor);
+}
+
+.right-column{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+}
+
+article.member {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.member .member__info {
+    height: 100%;
+    /* align-self: end; */
+    border-left: 1px solid var(--grayBkgColor);
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    padding-left: 13px;
+    padding-bottom: 21px;
+
+}
+
+.member__info span:first-child {
+    color: var(--grayColor);
+    font-size: 13px;
+    line-height: 2;
+
+    /* display: block; */
+}
+
+.member__info .member__name {
+    font-size: 15px;
+}
+
+.member .member__photo {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(https://i.pinimg.com/564x/17/79/e2/1779e2f1c75b5285a6f5c59400a3d6f3.jpg);
+    background-size: 120%;
+
+    background-position: center top;
+}
+
+.member .member__number {
+    padding-top: 21px;
+    padding-left: 13px;
+
+    color: var(--grayColor);
+    font-size: 13px;
+    font-weight: 600;
+
+    align-self: start;
+    height: 100%;
+
+    border-left: 1px solid var(--grayBkgColor);
+}
+
+.jennie .member__photo {
+    background-image: url(https://i.pinimg.com/564x/4f/e4/d7/4fe4d7d4cd91da1e6fcfa712a2a86d96.jpg);
+    background-size: 110%;
+    background-position: center bottom;
+}
+
+.rose .member__photo {
+    background-image: url(https://i.pinimg.com/564x/6f/26/76/6f26767396b347e73d10a741d91f82a6.jpg);
+    background-size: 115%;
+    background-position: center bottom;
+    /* background-position: -30px -80px; */
+}
+
+.lisa .member__photo {
+    background-image: url(https://i.pinimg.com/564x/fe/0a/10/fe0a108994f7edc1a6c08cf703c5ecdf.jpg);
+    background-size: 130%;
+}
+
